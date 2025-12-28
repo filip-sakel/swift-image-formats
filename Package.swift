@@ -1,4 +1,4 @@
-// swift-tools-version: 5.6
+// swift-tools-version: 5.8
 
 import PackageDescription
 
@@ -23,6 +23,9 @@ let package = Package(
                 .product(name: "LibPNG", package: "libpng"),
                 .product(name: "JPEG", package: "jpeg"),
                 .product(name: "WebP", package: "libwebp"),
+            ],
+            swiftSettings: [
+                .enableExperimentalFeature("Embedded"),
             ]
         ),
         .testTarget(

@@ -1,4 +1,4 @@
-import Foundation
+// import Foundation
 import JPEG
 import LibPNG
 import WebP
